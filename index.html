@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExploreX Travel Agency</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        header {
+            background: #2196f3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #0d47a1;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px black;
+        }
+        .section {
+            padding: 40px;
+            text-align: center;
+        }
+        .packages, .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #0d47a1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ExploreX Travel Agency</h1>
+        <p>Your Journey Begins Here</p>
+    </header>
+
+    <nav>
+        <a href="#packages">Tour Packages</a>
+        <a href="#booking">Booking</a>
+        <a href="#tips">Travel Tips</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <div class="hero">
+        Explore The World With Us
+    </div>
+
+    <section id="packages" class="section">
+        <h2>Popular Tour Packages</h2>
+        <div class="packages">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" />
+                <h3>Maldives Paradise</h3>
+                <p>5 Days | ₹40,000</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" />
+                <h3>Dubai Explorer</h3>
+                <p>4 Days | ₹35,000</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" />
+                <h3>Singapore Family Trip</h3>
+                <p>6 Days | ₹50,000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="section">
+        <h2>Booking Form</h2>
+        <form>
+            <input type="text" placeholder="Full Name" style="padding:10px;width:250px;"/><br/><br/>
+            <input type="email" placeholder="Email" style="padding:10px;width:250px;"/><br/><br/>
+            <input type="date" style="padding:10px;width:250px;"/><br/><br/>
+            <button style="padding:10px 20px;background:#2196f3;color:white;border:none;border-radius:5px;">Book Now</button>
+        </form>
+    </section>
+
+    <section id="tips" class="section">
+        <h2>Travel Tips</h2>
+        <p>✔ Always carry your ID documents</p>
+        <p>✔ Keep digital copies of your itinerary</p>
+        <p>✔ Pack lightweight and essential items</p>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Destination Gallery</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef" class="card" />
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="card" />
+            <img src="https://images.unsplash.com/photo-1494475673543-6a6a27143b22" class="card" />
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" class="card" />
+        </div>
+    </section>
+
+    <footer>
+        © 2025 ExploreX Travel Agency | All Rights Reserved
+    </footer>
+</body>
+</html>
